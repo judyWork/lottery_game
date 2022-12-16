@@ -16,6 +16,7 @@
         background: url(images/bg.png) no-repeat ;
         background-size: cover;
         overflow: hidden;
+        position: relative;
     }
     #container {
         margin: 0 auto;
@@ -99,11 +100,21 @@
         font-weight: bold;
         font-family: sans-serif;
     }
+
+    a{
+        display: block;
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        left: 16px;
+        top: 5;
+    }
 </style>
 </head>
 <body>            
     <!-- <h3 style="text-align:center;margin-top: 10%;color:white">實現九宮格抽獎</h3> -->
 <div id="bg">
+    <a href="https://judywork.github.io/Games_Lobby/"></a>
     <div id="container">
         <ul id="list">
             <!-- img標籤放獎品圖片 -->
@@ -159,7 +170,7 @@
     function startinit(num) {
         var i = 0;  //定義一個i 用來計算抽獎跑動的總次數
         var t =200;  //抽獎跑動的速度 初始爲200毫秒
-        var rounds = 5;  //抽獎轉動的圈數
+        var rounds = 2;  //抽獎轉動的圈數
         var rNum = rounds*8;  //標記跑動的次數（這是一個條件判斷分界線）
         timer = setTimeout(startscroll, t);//每t毫秒執行startscroll函數
 
